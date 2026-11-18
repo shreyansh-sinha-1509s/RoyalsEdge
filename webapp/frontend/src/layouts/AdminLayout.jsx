@@ -34,9 +34,9 @@ export function AdminLayout() {
       <header className="sticky top-0 z-30 border-b border-rr-lavender/15 bg-rr-surface-deep/95 backdrop-blur">
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
-            <Link to="/" className="flex items-center gap-2">
-              <RoyalsEdgeLogo size={30} />
-              <span className="text-xs font-extrabold tracking-[0.08em]">RoyalsEdge</span>
+            <Link to="/" className="group flex items-center" aria-label="RoyalsEdge Home">
+              <span className="sr-only">RoyalsEdge</span>
+              <RoyalsEdgeLogo variant="horizontal" size={30} interactive />
             </Link>
             <span className="inline-flex items-center gap-1 rounded-full border border-rr-gold/35 bg-rr-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-rr-gold">
               <Shield className="h-3 w-3" />

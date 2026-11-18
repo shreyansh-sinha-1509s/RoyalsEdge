@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from '../../hooks/useTheme.js';
 import { api } from '../../services/api.js';
-import { RoyalsEdgeLogo } from '../common/RoyalsEdgeLogo.jsx';
+import { RoyalsEdgeLogo, RoyalsEdgeWordmark } from '../common/RoyalsEdgeLogo.jsx';
 
 const NAV_GROUPS = [
   {
@@ -103,13 +103,20 @@ export function Navbar({ transparent = false }) {
     <>
       <header ref={navRef} className={shellClass}>
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="group flex items-center gap-2.5 focus:outline-none">
-            <RoyalsEdgeLogo size={34} className="transition-transform duration-200 group-hover:scale-105" />
-            <div className="leading-tight">
-              <span className="block text-sm font-extrabold tracking-[0.08em] text-rr-light">
-                RoyalsEdge
-              </span>
-              <span className="hidden text-[10px] font-medium tracking-wider text-rr-gold sm:block">
+          <Link to="/" className="group flex items-center gap-2.5 focus:outline-none" aria-label="RoyalsEdge Home">
+            <RoyalsEdgeLogo
+              variant="icon"
+              theme={transparent ? 'dark' : 'auto'}
+              size={38}
+              interactive
+            />
+            <div className="flex flex-col justify-center">
+              <span className="sr-only">RoyalsEdge</span>
+              <RoyalsEdgeWordmark
+                height={18}
+                theme={transparent ? 'dark' : 'auto'}
+              />
+              <span className="mt-0.5 hidden text-[9px] font-semibold tracking-[0.14em] text-rr-gold sm:block">
                 BEYOND THE NUMBERS. INSIDE THE PRESSURE.
               </span>
             </div>

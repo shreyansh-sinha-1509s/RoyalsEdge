@@ -80,10 +80,109 @@ html.light .rr-glass {
   animation: floatParticle 9s ease-in-out infinite;
 }
 
+/* RoyalsEdge Sovereign Vector Brand Micro-Animations */
+@keyframes reCrestReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(6px) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes reBladeGlide {
+  0% {
+    opacity: 0;
+    transform: translate(-5px, 3.5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes reGoldSweep {
+  0% {
+    transform: translateX(-78px) skewX(-22deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.72;
+  }
+  80% {
+    opacity: 0.55;
+  }
+  100% {
+    transform: translateX(92px) skewX(-22deg);
+    opacity: 0;
+  }
+}
+
+.re-logo-reveal {
+  animation: reCrestReveal 0.65s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.re-logo-reveal .re-logo-blade {
+  animation: reBladeGlide 0.7s cubic-bezier(0.22, 1, 0.36, 1) 0.14s both;
+}
+
+.re-logo-reveal .re-logo-sheen {
+  animation: reGoldSweep 1.35s cubic-bezier(0.4, 0, 0.2, 1) 0.35s both;
+}
+
+.re-logo-interactive .re-logo-blade,
+.re-logo-interactive .re-logo-seam {
+  transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.group:hover .re-logo-interactive .re-logo-blade,
+.re-logo-interactive:hover .re-logo-blade {
+  transform: translate(1.3px, -0.85px);
+}
+
+.group:hover .re-logo-interactive .re-logo-seam,
+.re-logo-interactive:hover .re-logo-seam {
+  transform: translate(0.7px, -0.45px);
+}
+
+.group:hover .re-logo-interactive .re-logo-sheen,
+.re-logo-interactive:hover .re-logo-sheen {
+  animation: reGoldSweep 0.95s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+/* Adaptive RoyalsEdge SVG wordmark tones for dark & light modes */
+.re-wm-royals-auto {
+  fill: #f5f1f5;
+}
+html.light .re-wm-royals-auto {
+  fill: #24172c;
+}
+.re-wm-edge-auto {
+  fill: #d8b45a;
+}
+html.light .re-wm-edge-auto {
+  fill: #a67c22;
+}
+.re-wm-tag-auto {
+  fill: #c9b9d3;
+}
+html.light .re-wm-tag-auto {
+  fill: #5b4867;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .stadium-beam,
-  .stadium-particle {
+  .stadium-particle,
+  .re-logo-reveal,
+  .re-logo-reveal .re-logo-blade,
+  .re-logo-reveal .re-logo-sheen,
+  .group:hover .re-logo-interactive .re-logo-sheen,
+  .re-logo-interactive:hover .re-logo-sheen {
     animation: none !important;
+    transition: none !important;
+    transform: none !important;
   }
 }
 

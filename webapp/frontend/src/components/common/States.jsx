@@ -1,9 +1,13 @@
 import { AlertTriangle, Database, Inbox, RefreshCw } from 'lucide-react';
+import { RoyalsEdgeLogo } from './RoyalsEdgeLogo.jsx';
 
 export function LoadingState({ label = 'Loading verified analytics data...' }) {
   return (
-    <div className="rr-card flex flex-col items-center justify-center gap-3 px-6 py-16 text-center" role="status">
-      <div className="h-9 w-9 animate-spin rounded-full border-2 border-rr-pink border-t-transparent" />
+    <div className="rr-card flex flex-col items-center justify-center gap-3.5 px-6 py-16 text-center" role="status">
+      <div className="relative flex h-14 w-14 items-center justify-center">
+        <div className="absolute inset-0 animate-spin rounded-full border-2 border-rr-gold/25 border-t-rr-pink border-r-rr-gold" />
+        <RoyalsEdgeLogo variant="micro" size={28} interactive={false} />
+      </div>
       <p className="text-sm font-medium text-rr-lavender">{label}</p>
     </div>
   );

@@ -6,12 +6,10 @@ export function Footer() {
     <footer className="mt-16 border-t border-rr-lavender/15 bg-rr-surface-deep/90 text-xs text-rr-lavender">
       <div className="mx-auto grid max-w-[1440px] gap-8 px-4 py-10 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <RoyalsEdgeLogo size={28} />
-            <span className="text-sm font-extrabold tracking-[0.08em] text-rr-light">
-              RoyalsEdge
-            </span>
-          </div>
+          <Link to="/" className="group inline-flex items-center" aria-label="RoyalsEdge Home">
+            <span className="sr-only">RoyalsEdge</span>
+            <RoyalsEdgeLogo variant="horizontal" size={34} interactive />
+          </Link>
           <p className="mt-2 max-w-md leading-relaxed text-rr-lavender">
             <strong className="text-rr-light">IPL 2027 Performance &amp; Auction Intelligence Platform.</strong>{' '}
             Beyond the Numbers. Inside the Pressure. Evaluating T20 player reliability under match

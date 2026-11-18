@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { RoyalsEdgeLogo, RoyalsEdgeWordmark } from '../components/common/RoyalsEdgeLogo.jsx';
 import { ErrorState, LoadingState } from '../components/common/States.jsx';
 import { StadiumHeroFallback } from '../components/hero/StadiumHeroFallback.jsx';
 import { Footer } from '../components/layout/Footer.jsx';
@@ -96,15 +97,32 @@ export function HomePage() {
             transition={{ duration: 0.65, ease: 'easeOut' }}
             className="mx-auto flex w-full max-w-4xl flex-col items-center text-center"
           >
+            {/* Sovereign Vector Animated Hero Crest */}
+            <div className="mb-4 flex justify-center">
+              <RoyalsEdgeLogo
+                variant="icon"
+                theme="dark"
+                size={68}
+                animated
+                interactive
+                className="drop-shadow-[0_10px_28px_rgba(232,62,128,0.22)]"
+              />
+            </div>
+
             {/* 1. Centered Top Pill Badge */}
             <div className="mb-5 inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-rr-gold/40 bg-rr-plum/75 px-4 py-1.5 text-center text-[10px] font-semibold uppercase tracking-[0.14em] text-rr-gold shadow-[0_0_24px_rgba(216,180,90,0.12)] backdrop-blur-md sm:text-[11px] sm:tracking-[0.18em]">
               <Flame className="h-3.5 w-3.5 shrink-0 text-rr-pink" />
               <span>IPL 2027 Performance &amp; Auction Intelligence Platform</span>
             </div>
 
-            {/* 2. Centered Main Heading */}
-            <h1 className="text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_6px_28px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl">
-              RoyalsEdge
+            {/* 2. Centered Bespoke Wordmark Heading */}
+            <h1 className="flex items-center justify-center drop-shadow-[0_6px_28px_rgba(0,0,0,0.65)]">
+              <span className="sr-only">RoyalsEdge</span>
+              <RoyalsEdgeWordmark
+                height={68}
+                theme="dark"
+                className="h-10 w-auto max-w-full sm:h-14 lg:h-[68px]"
+              />
             </h1>
 
             {/* 3. Centered Brand Tagline */}

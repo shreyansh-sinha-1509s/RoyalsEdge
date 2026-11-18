@@ -35,8 +35,8 @@ export function AdminLoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-rr-plum px-4 py-12 text-rr-light">
       <div className="rr-card w-full max-w-md p-7 shadow-rr">
         <div className="mb-6 text-center">
-          <div className="mx-auto mb-3 flex justify-center">
-            <RoyalsEdgeLogo size={46} />
+          <div className="mx-auto mb-4 flex justify-center">
+            <RoyalsEdgeLogo variant="stacked" size={116} animated interactive />
           </div>
           <h1 className="text-xl font-extrabold tracking-tight text-rr-light">Admin Console Login</h1>
           <p className="mt-1 text-xs text-rr-lavender">
