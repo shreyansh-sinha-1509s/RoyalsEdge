@@ -1,0 +1,39 @@
+# Keep Vercel upload bundle minimal (<3 MB) and strictly exclude secrets & local datasets
+/.git/
+/.vercel/
+/.venv/
+/venv/
+__pycache__/
+.pytest_cache/
+
+# Secrets (never upload local .env files; Vercel uses configured Production env vars)
+.env
+.env.*
+webapp/**/.env
+webapp/**/.env.*
+
+# Private raw/processed datasets & root Python pipeline (leading / = root-only, preserves webapp/*/src!)
+/data/
+/notebooks/
+/report/
+/src/
+/tests/
+/requirements.txt
+/README_FIRST.txt
+
+# Exclude unapproved outputs; keep ONLY the 3 curated analytical appendix CSVs for /api/reports
+/outputs/*
+!/outputs/ranking_robustness.csv
+!/outputs/pressure_model_comparison.csv
+!/outputs/shortlist_alternatives.csv
+
+# Exclude local dependencies & build artifacts (built freshly on Vercel Linux)
+node_modules/
+webapp/backend/node_modules/
+webapp/frontend/node_modules/
+webapp/frontend/dist/
+webapp/backend/coverage/
+webapp/frontend/coverage/
+webapp/backend/tests/
+webapp/frontend/src/tests/
+*.log

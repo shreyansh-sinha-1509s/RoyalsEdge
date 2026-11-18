@@ -65,3 +65,6 @@ webapp/**/node_modules/
 dist/
 webapp/**/dist/
 webapp/**/coverage/
+
+.vercel
+.env*
