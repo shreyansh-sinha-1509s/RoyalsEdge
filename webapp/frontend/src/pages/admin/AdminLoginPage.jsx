@@ -39,7 +39,7 @@ export function AdminLoginPage() {
           </div>
           <h1 className="text-xl font-extrabold tracking-tight text-rr-light">Admin Console Login</h1>
           <p className="mt-1 text-xs text-rr-lavender">
-            RR PERFORMANCE LAB · Protected Operational Console (No Public Registration)
+            RoyalsEdge · IPL 2027 Performance &amp; Auction Intelligence Platform (No Public Registration)
           </p>
         </div>
 

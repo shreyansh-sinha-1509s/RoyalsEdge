@@ -13,7 +13,7 @@ export function createOverviewController(prisma) {
         });
         return sendSuccess(res, {
           status: 'ok',
-          service: 'rr-performance-lab-api',
+          service: 'royalsedge-api',
           database: 'connected',
           uptimeSeconds: Math.round(process.uptime()),
           timestamp: new Date().toISOString(),
@@ -104,10 +104,11 @@ export function createOverviewController(prisma) {
 
           return {
             brand: {
-              name: 'RR PERFORMANCE LAB',
+              name: 'RoyalsEdge',
+              subtitle: 'IPL 2027 Performance & Auction Intelligence Platform',
               tagline: 'Beyond the Numbers. Inside the Pressure.',
               description:
-                'An advanced cricket performance intelligence platform uncovering the players who deliver when the pressure is highest.',
+                'IPL 2027 Performance & Auction Intelligence Platform uncovering the players who deliver when the pressure is highest.',
               disclaimer:
                 'Independent historical analytics project (SupeRR Selector Season 2). Not an official Rajasthan Royals product.',
             },

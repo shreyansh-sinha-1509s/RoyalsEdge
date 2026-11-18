@@ -29,7 +29,7 @@ afterEach(() => {
   vi.restoreAllMocks();
 });
 
-describe('RR PERFORMANCE LAB Frontend Verification', () => {
+describe('RoyalsEdge Frontend Verification', () => {
   it('never formats NULL reliability or missing metrics as zero', () => {
     expect(fmtReliability(null)).toBe('Insufficient Evidence (NULL)');
     expect(fmtReliability(undefined)).toBe('Insufficient Evidence (NULL)');
@@ -97,7 +97,7 @@ describe('RR PERFORMANCE LAB Frontend Verification', () => {
       </MemoryRouter>
     );
 
-    expect(screen.getByRole('heading', { level: 1, name: /RR PERFORMANCE LAB/i })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1, name: /RoyalsEdge/i })).toBeInTheDocument();
     expect(screen.getAllByText(/BEYOND THE NUMBERS\. INSIDE THE PRESSURE\./i).length).toBeGreaterThanOrEqual(2);
     expect(screen.getByRole('link', { name: /ENTER ANALYTICS/i })).toHaveAttribute('href', '/overview');
 
@@ -328,7 +328,7 @@ describe('RR PERFORMANCE LAB Frontend Verification', () => {
             data: [
               {
                 id: 'methodology-report-pdf',
-                title: 'RR PERFORMANCE LAB — Methodology Report (PDF)',
+                title: 'RoyalsEdge — Methodology Report (PDF)',
                 description: '4-page PDF report',
                 category: 'Official Submission',
                 fileType: 'PDF',

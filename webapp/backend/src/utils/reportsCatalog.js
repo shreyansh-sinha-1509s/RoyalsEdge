@@ -39,7 +39,7 @@ const ALLOWED_REPORTS = [
   },
   {
     id: 'methodology-report-pdf',
-    title: 'RR PERFORMANCE LAB — Methodology Report (PDF)',
+    title: 'RoyalsEdge — Methodology Report (PDF)',
     description: 'Publication-grade 4-page PDF documenting data controls, Model C pressure framework, Empirical Bayes shrinkage, reliability, Top 10 tables, robustness, and limitations.',
     category: 'Official Submission',
     fileType: 'PDF',
@@ -49,7 +49,7 @@ const ALLOWED_REPORTS = [
   },
   {
     id: 'executive-summary-pdf',
-    title: 'RR PERFORMANCE LAB — Executive Summary (PDF)',
+    title: 'RoyalsEdge — Executive Summary (PDF)',
     description: '2-page decision-maker brief presenting the Top 10 Batters & Bowlers, confidence intervals, strongest findings, and key decision risks.',
     category: 'Official Submission',
     fileType: 'PDF',

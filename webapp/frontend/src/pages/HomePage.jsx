@@ -98,11 +98,11 @@ export function HomePage() {
           >
             <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-rr-gold/40 bg-rr-plum/75 px-3.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-rr-gold backdrop-blur">
               <Flame className="h-3.5 w-3.5 text-rr-pink" />
-              SupeRR Selector Season 2 · IPL & T20I (2022–2026)
+              IPL 2027 Performance &amp; Auction Intelligence Platform
             </div>
 
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              RR PERFORMANCE LAB
+              RoyalsEdge
             </h1>
             <p className="mt-3 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-rr-pink sm:text-base">
               BEYOND THE NUMBERS. INSIDE THE PRESSURE.

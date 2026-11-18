@@ -1,9 +1,9 @@
 {
-  "name": "rr-performance-lab",
+  "name": "royalsedge",
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "description": "RR PERFORMANCE LAB — Full-Stack Cricket Performance & Auction Intelligence Platform",
+  "description": "RoyalsEdge — IPL 2027 Performance & Auction Intelligence Platform",
   "engines": {
     "node": "22.x"
   },
@@ -13,3 +13,4 @@
     "test:frontend": "cd webapp/frontend && npm test"
   }
 }
+

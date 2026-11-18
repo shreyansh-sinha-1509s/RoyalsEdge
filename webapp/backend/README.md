@@ -1,5 +1,6 @@
-# RR PERFORMANCE LAB — Backend API & Database Layer
+# RoyalsEdge — Backend API & Database Layer
 
+**Subtitle:** IPL 2027 Performance & Auction Intelligence Platform  
 **Tagline:** *Beyond the Numbers. Inside the Pressure.*  
 **Stack:** Node.js 22 (ES Modules) · Express.js · Prisma 6 ORM · Neon Managed PostgreSQL · Zod · Vitest + Supertest
 

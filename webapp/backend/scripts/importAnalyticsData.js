@@ -6,7 +6,7 @@ async function main() {
   loadEnv({ requireDatabase: true, requireJwt: false });
   const prisma = getPrismaClient();
 
-  console.log('=== RR PERFORMANCE LAB — Analytics Data Import ===');
+  console.log('=== RoyalsEdge — Analytics Data Import ===');
   console.log('Validating source CSV headers and loading verified Phase 2–6 outputs...');
 
   const result = await runAnalyticsImport(prisma, { triggeredBy: 'CLI' });

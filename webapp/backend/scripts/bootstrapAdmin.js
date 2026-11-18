@@ -41,7 +41,7 @@ async function main() {
     );
   }
 
-  console.log('=== RR PERFORMANCE LAB — Secure Admin Bootstrap ===');
+  console.log('=== RoyalsEdge — Secure Admin Bootstrap ===');
   console.log(`Target admin email from .env: ${email}`);
   console.log('Password input is hidden and will NEVER be logged or stored in plaintext.\n');
 

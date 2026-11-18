@@ -1,6 +1,6 @@
 /**
- * Centralized API client for RR PERFORMANCE LAB backend.
- * Uses VITE_API_BASE_URL (default http://localhost:5000) and HttpOnly cookie credentials.
+ * Centralized API client for RoyalsEdge backend.
+ * Uses VITE_API_BASE_URL (default same-origin in prod, http://localhost:5000 in dev) and HttpOnly cookie credentials.
  * Never fabricates fallback data when backend calls fail.
  */
 
@@ -54,7 +54,7 @@ export async function apiRequest(path, { method = 'GET', params, body, signal } 
     throw new ApiClientError(
       0,
       'NETWORK_ERROR',
-      `Unable to reach RR PERFORMANCE LAB API at ${API_BASE_URL}. Confirm the backend server is running.`
+      `Unable to reach RoyalsEdge API at ${API_BASE_URL || 'same-origin'}. Confirm the backend server is running.`
     );
   }
 

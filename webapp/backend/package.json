@@ -1,7 +1,7 @@
 {
-  "name": "rr-performance-lab-backend",
+  "name": "royalsedge-backend",
   "version": "1.0.0",
-  "description": "RR PERFORMANCE LAB — Express + Prisma + Neon PostgreSQL Analytics Backend",
+  "description": "RoyalsEdge — IPL 2027 Performance & Auction Intelligence Platform (Express + Prisma + Neon PostgreSQL)",
   "type": "module",
   "main": "src/server.js",
   "engines": {

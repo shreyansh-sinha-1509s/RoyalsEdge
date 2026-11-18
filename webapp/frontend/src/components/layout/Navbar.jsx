@@ -104,11 +104,11 @@ export function Navbar({ transparent = false }) {
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
           <Link to="/" className="flex items-center gap-2.5 focus:outline-none">
             <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rr-pink to-rr-gold/90 font-mono text-xs font-extrabold tracking-tight text-rr-plum shadow-rr-pink">
-              RR
+              RE
             </span>
             <div className="leading-tight">
-              <span className="block text-sm font-extrabold tracking-[0.12em] text-rr-light">
-                RR PERFORMANCE LAB
+              <span className="block text-sm font-extrabold tracking-[0.08em] text-rr-light">
+                RoyalsEdge
               </span>
               <span className="hidden text-[10px] font-medium tracking-wider text-rr-gold sm:block">
                 BEYOND THE NUMBERS. INSIDE THE PRESSURE.

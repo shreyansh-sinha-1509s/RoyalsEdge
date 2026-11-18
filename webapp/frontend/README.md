@@ -1,4 +1,7 @@
-# RR PERFORMANCE LAB — Frontend Application
+# RoyalsEdge — Frontend Application
+
+**Subtitle:** IPL 2027 Performance & Auction Intelligence Platform  
+**Tagline:** *Beyond the Numbers. Inside the Pressure.*
 
 **Stack:** React 18 · Vite 6 · Tailwind CSS 3.4 · React Router 7 · Recharts · Framer Motion · Three.js / React Three Fiber · Vitest + React Testing Library
 

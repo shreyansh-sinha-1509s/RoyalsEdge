@@ -20,7 +20,7 @@ import { fmtInt, fmtNum, humanizeEnum, stabilityBadgeClasses } from '../utils/fo
 export function OverviewPage() {
   const { data, loading, error, refetch } = useApiQuery((signal) => api.getOverview(signal), []);
 
-  if (loading) return <LoadingState label="Loading RR PERFORMANCE LAB overview..." />;
+  if (loading) return <LoadingState label="Loading RoyalsEdge overview..." />;
   if (error) return <ErrorState error={error} onRetry={refetch} />;
   if (!data) return null;
 

@@ -22,7 +22,7 @@ export function ErrorState({ error, onRetry, title = 'Unable to load analytical 
       <h3 className="text-base font-semibold text-rr-light">{title}</h3>
       <p className="mx-auto mt-1.5 max-w-xl text-sm text-rr-lavender">{message}</p>
       <p className="mt-2 text-xs text-rr-lavender/80">
-        RR PERFORMANCE LAB never substitutes fabricated demo data when live backend data is unavailable.
+        RoyalsEdge never substitutes fabricated demo data when live backend data is unavailable.
       </p>
       {onRetry && (
         <button

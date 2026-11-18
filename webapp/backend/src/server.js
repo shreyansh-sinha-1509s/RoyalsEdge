@@ -15,7 +15,7 @@ async function startServer() {
   const app = createApp({ prismaClient: prisma, envOverride: env });
 
   const server = app.listen(env.PORT, () => {
-    console.log(`RR PERFORMANCE LAB API listening on port ${env.PORT} (${env.NODE_ENV})`);
+    console.log(`RoyalsEdge API listening on port ${env.PORT} (${env.NODE_ENV})`);
   });
 
   const shutdown = async (signal) => {

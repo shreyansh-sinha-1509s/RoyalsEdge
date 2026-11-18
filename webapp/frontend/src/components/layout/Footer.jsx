@@ -7,16 +7,16 @@ export function Footer() {
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
             <span className="flex h-6 w-6 items-center justify-center rounded bg-gradient-to-br from-rr-pink to-rr-gold font-mono text-[10px] font-extrabold text-rr-plum">
-              RR
+              RE
             </span>
-            <span className="text-sm font-extrabold tracking-[0.12em] text-rr-light">
-              RR PERFORMANCE LAB
+            <span className="text-sm font-extrabold tracking-[0.08em] text-rr-light">
+              RoyalsEdge
             </span>
           </div>
           <p className="mt-2 max-w-md leading-relaxed text-rr-lavender">
-            Beyond the Numbers. Inside the Pressure. An independent historical cricket performance
-            intelligence platform evaluating T20 reliability under match pressure across IPL and
-            T20I seasons (2022–2026).
+            <strong className="text-rr-light">IPL 2027 Performance &amp; Auction Intelligence Platform.</strong>{' '}
+            Beyond the Numbers. Inside the Pressure. Evaluating T20 player reliability under match
+            pressure across IPL and T20I seasons (2022–2026).
           </p>
           <p className="mt-3 text-[11px] text-rr-lavender/75">
             Independent research project built for SupeRR Selector Season 2. Not affiliated with or
@@ -52,7 +52,7 @@ export function Footer() {
       </div>
 
       <div className="border-t border-rr-lavender/10 py-4 text-center text-[11px] text-rr-lavender/75">
-        © {new Date().getFullYear()} RR PERFORMANCE LAB · Historical Cricket Analytics Platform · Zero Live or Fabricated Metrics
+        © {new Date().getFullYear()} RoyalsEdge · IPL 2027 Performance &amp; Auction Intelligence Platform · Zero Live or Fabricated Metrics
       </div>
     </footer>
   );

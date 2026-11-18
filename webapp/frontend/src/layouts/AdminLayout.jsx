@@ -35,9 +35,9 @@ export function AdminLayout() {
           <div className="flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2">
               <span className="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-br from-rr-pink to-rr-gold font-mono text-[11px] font-extrabold text-rr-plum">
-                RR
+                RE
               </span>
-              <span className="text-xs font-extrabold tracking-[0.12em]">RR PERFORMANCE LAB</span>
+              <span className="text-xs font-extrabold tracking-[0.08em]">RoyalsEdge</span>
             </Link>
             <span className="inline-flex items-center gap-1 rounded-full border border-rr-gold/35 bg-rr-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-rr-gold">
               <Shield className="h-3 w-3" />

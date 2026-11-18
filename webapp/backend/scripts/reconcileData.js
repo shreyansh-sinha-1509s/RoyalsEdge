@@ -6,7 +6,7 @@ async function main() {
   loadEnv({ requireDatabase: true, requireJwt: false });
   const prisma = getPrismaClient();
 
-  console.log('=== RR PERFORMANCE LAB — Database Reconciliation ===');
+  console.log('=== RoyalsEdge — Database Reconciliation ===');
   const report = await runDataReconciliation(prisma);
 
   console.log(`Status                      : ${report.passed ? 'PASS' : 'FAIL'}`);

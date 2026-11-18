@@ -1,7 +1,7 @@
 {
-  "name": "rr-performance-lab-frontend",
+  "name": "royalsedge-frontend",
   "version": "1.0.0",
-  "description": "RR PERFORMANCE LAB — React + Vite + Tailwind + Three.js + Recharts Cricket Analytics Platform",
+  "description": "RoyalsEdge — IPL 2027 Performance & Auction Intelligence Platform (React + Vite + Tailwind + Three.js + Recharts)",
   "type": "module",
   "scripts": {
     "dev": "vite --port 5173",
