@@ -1,14 +1,13 @@
 import { Link } from 'react-router-dom';
+import { RoyalsEdgeLogo } from '../common/RoyalsEdgeLogo.jsx';
 
 export function Footer() {
   return (
     <footer className="mt-16 border-t border-rr-lavender/15 bg-rr-surface-deep/90 text-xs text-rr-lavender">
       <div className="mx-auto grid max-w-[1440px] gap-8 px-4 py-10 sm:px-6 md:grid-cols-4 lg:px-8">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2">
-            <span className="flex h-6 w-6 items-center justify-center rounded bg-gradient-to-br from-rr-pink to-rr-gold font-mono text-[10px] font-extrabold text-rr-plum">
-              RE
-            </span>
+          <div className="flex items-center gap-2.5">
+            <RoyalsEdgeLogo size={28} />
             <span className="text-sm font-extrabold tracking-[0.08em] text-rr-light">
               RoyalsEdge
             </span>

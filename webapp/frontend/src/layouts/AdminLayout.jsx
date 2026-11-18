@@ -1,5 +1,6 @@
 import { Activity, CheckCircle2, Database, FileText, LogOut, Shield } from 'lucide-react';
 import { Link, NavLink, Navigate, Outlet, useLocation } from 'react-router-dom';
+import { RoyalsEdgeLogo } from '../components/common/RoyalsEdgeLogo.jsx';
 import { LoadingState } from '../components/common/States.jsx';
 import { useAdminAuth } from '../hooks/useAdminAuth.jsx';
 
@@ -34,9 +35,7 @@ export function AdminLayout() {
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between px-4 sm:px-6 lg:px-8">
           <div className="flex items-center gap-3">
             <Link to="/" className="flex items-center gap-2">
-              <span className="flex h-7 w-7 items-center justify-center rounded bg-gradient-to-br from-rr-pink to-rr-gold font-mono text-[11px] font-extrabold text-rr-plum">
-                RE
-              </span>
+              <RoyalsEdgeLogo size={30} />
               <span className="text-xs font-extrabold tracking-[0.08em]">RoyalsEdge</span>
             </Link>
             <span className="inline-flex items-center gap-1 rounded-full border border-rr-gold/35 bg-rr-gold/10 px-2.5 py-0.5 text-[11px] font-semibold text-rr-gold">

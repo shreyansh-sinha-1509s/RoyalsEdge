@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { useTheme } from '../../hooks/useTheme.js';
 import { api } from '../../services/api.js';
+import { RoyalsEdgeLogo } from '../common/RoyalsEdgeLogo.jsx';
 
 const NAV_GROUPS = [
   {
@@ -102,10 +103,8 @@ export function Navbar({ transparent = false }) {
     <>
       <header ref={navRef} className={shellClass}>
         <div className="mx-auto flex h-16 max-w-[1440px] items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <Link to="/" className="flex items-center gap-2.5 focus:outline-none">
-            <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-rr-pink to-rr-gold/90 font-mono text-xs font-extrabold tracking-tight text-rr-plum shadow-rr-pink">
-              RE
-            </span>
+          <Link to="/" className="group flex items-center gap-2.5 focus:outline-none">
+            <RoyalsEdgeLogo size={34} className="transition-transform duration-200 group-hover:scale-105" />
             <div className="leading-tight">
               <span className="block text-sm font-extrabold tracking-[0.08em] text-rr-light">
                 RoyalsEdge

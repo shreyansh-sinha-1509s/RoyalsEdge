@@ -80,75 +80,88 @@ export function HomePage() {
           </Suspense>
         )}
 
-        {/* Scrim for guaranteed WCAG AA readability over 3D floodlights */}
+        {/* Balanced radial vignette scrim for crisp WCAG AA readability over 3D floodlights */}
         <div
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, rgba(20,10,28,0.88) 0%, rgba(20,10,28,0.62) 52%, rgba(20,10,28,0.34) 100%)',
+              'radial-gradient(ellipse 74% 66% at 50% 45%, rgba(20,10,28,0.76) 0%, rgba(20,10,28,0.48) 58%, rgba(16,7,23,0.84) 100%)',
           }}
         />
 
-        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col justify-center px-4 py-14 sm:px-6 lg:px-8">
+        <div className="relative z-10 mx-auto flex w-full max-w-[1440px] flex-1 flex-col items-center justify-center px-4 py-12 sm:px-6 sm:py-16 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.65, ease: 'easeOut' }}
-            className="max-w-2xl"
+            className="mx-auto flex w-full max-w-4xl flex-col items-center text-center"
           >
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-rr-gold/40 bg-rr-plum/75 px-3.5 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-rr-gold backdrop-blur">
-              <Flame className="h-3.5 w-3.5 text-rr-pink" />
-              IPL 2027 Performance &amp; Auction Intelligence Platform
+            {/* 1. Centered Top Pill Badge */}
+            <div className="mb-5 inline-flex max-w-full flex-wrap items-center justify-center gap-2 rounded-full border border-rr-gold/40 bg-rr-plum/75 px-4 py-1.5 text-center text-[10px] font-semibold uppercase tracking-[0.14em] text-rr-gold shadow-[0_0_24px_rgba(216,180,90,0.12)] backdrop-blur-md sm:text-[11px] sm:tracking-[0.18em]">
+              <Flame className="h-3.5 w-3.5 shrink-0 text-rr-pink" />
+              <span>IPL 2027 Performance &amp; Auction Intelligence Platform</span>
             </div>
 
-            <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {/* 2. Centered Main Heading */}
+            <h1 className="text-5xl font-extrabold tracking-tight text-white drop-shadow-[0_6px_28px_rgba(0,0,0,0.65)] sm:text-6xl lg:text-7xl">
               RoyalsEdge
             </h1>
-            <p className="mt-3 font-mono text-sm font-semibold uppercase tracking-[0.2em] text-rr-pink sm:text-base">
+
+            {/* 3. Centered Brand Tagline */}
+            <p className="mt-4 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-rr-pink sm:text-sm sm:tracking-[0.24em] md:text-base">
               BEYOND THE NUMBERS. INSIDE THE PRESSURE.
             </p>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-rr-light/90 sm:text-lg">
+
+            {/* 4. Centered Description Paragraph */}
+            <p className="mt-5 max-w-[740px] text-sm leading-relaxed text-rr-light/90 sm:text-base md:text-lg">
               Discover how the world&apos;s T20 players perform when every run, wicket, and delivery
               matters. Built on pre-delivery pressure modeling, Empirical Bayes shrinkage, and
               volume-free reliability analysis.
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-3">
+            {/* 5. Centered Horizontal CTA Button Row */}
+            <div className="mt-8 flex w-full flex-col items-center justify-center gap-3.5 sm:w-auto sm:flex-row sm:flex-wrap">
               <Link
                 to="/overview"
-                className="inline-flex items-center gap-2 rounded-lg bg-rr-pink px-6 py-3.5 text-sm font-bold tracking-wide text-white shadow-rr-pink transition hover:bg-rr-pink/90"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-rr-pink px-7 py-3.5 text-sm font-bold tracking-wide text-white shadow-rr-pink transition hover:bg-rr-pink/90 sm:w-auto"
               >
                 ENTER ANALYTICS
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <Link
                 to="/batting"
-                className="inline-flex items-center gap-2 rounded-lg border border-rr-gold/50 bg-rr-plum/75 px-6 py-3.5 text-sm font-bold tracking-wide text-rr-gold backdrop-blur transition hover:bg-rr-gold hover:text-rr-plum"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl border border-rr-gold/55 bg-rr-plum/75 px-7 py-3.5 text-sm font-bold tracking-wide text-rr-gold backdrop-blur-md transition hover:bg-rr-gold hover:text-rr-plum sm:w-auto"
               >
                 <Trophy className="h-4 w-4" />
                 VIEW TOP 10 PLAYERS
               </Link>
             </div>
 
-            {/* Live Compact Data Pills */}
-            <div className="mt-9 grid max-w-xl grid-cols-3 gap-3 border-t border-white/15 pt-6">
-              <div>
-                <div className="font-mono text-lg font-bold text-white tabular-nums sm:text-xl">
+            {/* 6. Centered Dataset Statistics Row */}
+            <div className="mt-10 grid w-full max-w-xl grid-cols-1 gap-4 border-t border-white/15 pt-6 min-[420px]:grid-cols-3 min-[420px]:gap-4 sm:max-w-2xl sm:gap-8">
+              <div className="flex flex-col items-center">
+                <div className="font-mono text-xl font-bold text-white tabular-nums sm:text-2xl">
                   {snap ? fmtInt(snap.deliveries) : '—'}
                 </div>
-                <div className="text-[11px] uppercase tracking-wider text-rr-lavender">Deliveries</div>
+                <div className="mt-0.5 text-[11px] uppercase tracking-wider text-rr-lavender">
+                  Deliveries
+                </div>
               </div>
-              <div>
-                <div className="font-mono text-lg font-bold text-white tabular-nums sm:text-xl">
+              <div className="flex flex-col items-center">
+                <div className="font-mono text-xl font-bold text-white tabular-nums sm:text-2xl">
                   {snap ? fmtInt(snap.matchesWithBallData) : '—'}
                 </div>
-                <div className="text-[11px] uppercase tracking-wider text-rr-lavender">Matches</div>
+                <div className="mt-0.5 text-[11px] uppercase tracking-wider text-rr-lavender">
+                  Matches
+                </div>
               </div>
-              <div>
-                <div className="font-mono text-lg font-bold text-rr-gold tabular-nums sm:text-xl">
+              <div className="flex flex-col items-center">
+                <div className="font-mono text-xl font-bold text-rr-gold tabular-nums sm:text-2xl">
                   {snap ? snap.seasonsCoverage : '2022–2026'}
                 </div>
-                <div className="text-[11px] uppercase tracking-wider text-rr-lavender">IPL + T20I</div>
+                <div className="mt-0.5 text-[11px] uppercase tracking-wider text-rr-lavender">
+                  IPL + T20I
+                </div>
               </div>
             </div>
           </motion.div>

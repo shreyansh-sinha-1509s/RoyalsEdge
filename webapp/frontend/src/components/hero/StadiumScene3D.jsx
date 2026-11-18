@@ -123,12 +123,12 @@ function HeroCricketBall() {
   useFrame((state, delta) => {
     if (!ballRef.current) return;
     ballRef.current.rotation.y += delta * 0.45;
-    ballRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.6) * 0.18 + 0.3;
-    ballRef.current.position.y = 0.55 + Math.sin(state.clock.elapsedTime * 1.1) * 0.18;
+    ballRef.current.rotation.x = Math.sin(state.clock.elapsedTime * 0.6) * 0.16 + 0.28;
+    ballRef.current.position.y = -1.15 + Math.sin(state.clock.elapsedTime * 1.1) * 0.14;
   });
 
   return (
-    <group ref={ballRef} position={[2.35, 0.55, 3.2]}>
+    <group ref={ballRef} position={[0, -1.15, 3.3]} scale={1.04}>
       {/* Crimson-pink leather sphere */}
       <mesh>
         <sphereGeometry args={[0.92, 48, 48]} />
@@ -219,7 +219,7 @@ export default function StadiumScene3D({ active = true }) {
         <pointLight position={[0, 7, 2]} intensity={2.4} color="#FFE9BA" distance={28} />
         <pointLight position={[-10, 6, -8]} intensity={1.8} color="#E83E80" distance={30} />
         <pointLight position={[10, 6, -8]} intensity={1.8} color="#D8B45A" distance={30} />
-        <spotLight position={[4, 5, 8]} angle={0.45} penumbra={0.8} intensity={2.2} color="#FFF3D6" />
+        <spotLight position={[0, 5.5, 8.5]} angle={0.48} penumbra={0.85} intensity={2.2} color="#FFF3D6" />
 
         <CricketPitchAndBowl />
         <FloodlightTower position={[-11.5, -2.4, -10.5]} aimTarget={[0, -2.2, 0]} beamColor="#D8B45A" />

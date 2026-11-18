@@ -1,6 +1,7 @@
-import { Lock, Shield } from 'lucide-react';
+import { Lock } from 'lucide-react';
 import { useState } from 'react';
 import { Link, Navigate, useLocation, useNavigate } from 'react-router-dom';
+import { RoyalsEdgeLogo } from '../../components/common/RoyalsEdgeLogo.jsx';
 import { useAdminAuth } from '../../hooks/useAdminAuth.jsx';
 
 export function AdminLoginPage() {
@@ -34,8 +35,8 @@ export function AdminLoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-rr-plum px-4 py-12 text-rr-light">
       <div className="rr-card w-full max-w-md p-7 shadow-rr">
         <div className="mb-6 text-center">
-          <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-xl bg-rr-pink/15 text-rr-pink">
-            <Shield className="h-6 w-6" />
+          <div className="mx-auto mb-3 flex justify-center">
+            <RoyalsEdgeLogo size={46} />
           </div>
           <h1 className="text-xl font-extrabold tracking-tight text-rr-light">Admin Console Login</h1>
           <p className="mt-1 text-xs text-rr-lavender">
