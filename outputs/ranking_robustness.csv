@@ -1,0 +1,15 @@
+discipline,robustness_test,category,n_candidates,spearman_corr_vs_primary,top10_overlap_count,top10_overlap_pct,mean_abs_rank_shift_top15
+batting,Model_A_Pressure,Pressure_Framework,173,0.9786,8,80.0,3.27
+batting,Model_B_Pressure,Pressure_Framework,173,0.9732,7,70.0,4.2
+batting,Model_C_Thresh_Minus3pts,Pressure_Framework,173,0.9755,8,80.0,4.27
+batting,Model_C_Thresh_Plus3pts,Pressure_Framework,173,0.9759,7,70.0,3.4
+batting,Raw_No_EB_Shrinkage,Shrinkage,173,0.9986,8,80.0,2.13
+batting,Approach_Performance_Dominant,Ranking_Philosophy,173,0.9959,8,80.0,1.73
+batting,Approach_Reliability_Dominant,Ranking_Philosophy,173,0.9291,7,70.0,4.87
+bowling,Model_A_Pressure,Pressure_Framework,165,0.9396,5,50.0,5.13
+bowling,Model_B_Pressure,Pressure_Framework,165,0.8838,7,70.0,6.47
+bowling,Model_C_Thresh_Minus3pts,Pressure_Framework,165,0.9511,8,80.0,3.87
+bowling,Model_C_Thresh_Plus3pts,Pressure_Framework,165,0.9126,8,80.0,6.07
+bowling,Raw_No_EB_Shrinkage,Shrinkage,165,0.9927,8,80.0,3.13
+bowling,Approach_Performance_Dominant,Ranking_Philosophy,165,0.9894,9,90.0,1.27
+bowling,Approach_Reliability_Dominant,Ranking_Philosophy,165,0.8807,7,70.0,5.6

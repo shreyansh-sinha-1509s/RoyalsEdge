@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rr-bg-primary: #24172c;
+  --rr-bg-deep: #1b1022;
+  --rr-bg-surface: #392940;
+  --rr-pink: #e83e80;
+  --rr-gold: #d8b45a;
+  --rr-light: #f5f1f5;
+  --rr-lavender: #b8a6c2;
+  --rr-border: rgba(184, 166, 194, 0.2);
+}
+
+html.light {
+  --rr-bg-primary: #f5f1f5;
+  --rr-bg-deep: #ece5ee;
+  --rr-bg-surface: #ffffff;
+  --rr-light: #24172c;
+  --rr-lavender: #5b4867;
+  --rr-border: rgba(57, 41, 64, 0.16);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--rr-bg-primary);
+    color: var(--rr-light);
+  }
+
+  body {
+    background-color: var(--rr-bg-primary);
+    color: var(--rr-light);
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.rr-card {
+  background-color: var(--rr-bg-surface);
+  border: 1px solid var(--rr-border);
+  border-radius: 0.75rem;
+}
+
+.rr-glass {
+  background: rgba(36, 23, 44, 0.74);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(184, 166, 194, 0.18);
+}
+
+html.light .rr-glass {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(57, 41, 64, 0.14);
+}
+
+/* Cinematic stadium CSS fallback animation (respects reduced motion) */
+@keyframes stadiumBeamPulse {
+  0%, 100% { opacity: 0.42; transform: scaleY(1); }
+  50% { opacity: 0.68; transform: scaleY(1.04); }
+}
+
+@keyframes floatParticle {
+  0% { transform: translateY(0px) translateX(0px); opacity: 0.25; }
+  50% { transform: translateY(-18px) translateX(8px); opacity: 0.75; }
+  100% { transform: translateY(0px) translateX(0px); opacity: 0.25; }
+}
+
+.stadium-beam {
+  animation: stadiumBeamPulse 7s ease-in-out infinite;
+}
+
+.stadium-particle {
+  animation: floatParticle 9s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stadium-beam,
+  .stadium-particle {
+    animation: none !important;
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1b1022;
+}
+::-webkit-scrollbar-thumb {
+  background: #4e3957;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e83e80;
+}
+

@@ -1,0 +1,67 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Raw proprietary competition data
+data/raw/
+data/raw/*
+
+# Processed private datasets
+data/processed/
+data/processed/*
+
+# Generated outputs (keep private unless explicitly approved aggregate results)
+outputs/*
+!outputs/ranking_robustness.csv
+!outputs/pressure_model_comparison.csv
+!outputs/shortlist_alternatives.csv
+
+# macOS and Windows OS metadata
+__MACOSX/
+.DS_Store
+._*
+Thumbs.db
+desktop.ini
+
+# Temporary, local database, and backup files
+*.tmp
+*.temp
+*.bak
+*.log
+*.swp
+*.swo
+~$*
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and local environment files
+.env
+.env.*
+!.env.example
+webapp/**/.env
+webapp/**/.env.*
+!webapp/**/.env.example
+
+# Vercel local CLI metadata
+.vercel/
+webapp/**/.vercel/
+
+# Node.js dependencies and build outputs
+node_modules/
+webapp/**/node_modules/
+dist/
+webapp/**/dist/
+webapp/**/coverage/

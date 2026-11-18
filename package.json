@@ -1,0 +1,15 @@
+{
+  "name": "rr-performance-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "RR PERFORMANCE LAB — Full-Stack Cricket Performance & Auction Intelligence Platform",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "build": "cd webapp/frontend && npm run build",
+    "test:backend": "cd webapp/backend && npm test",
+    "test:frontend": "cd webapp/frontend && npm test"
+  }
+}

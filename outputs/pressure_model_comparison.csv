@@ -1,0 +1,10 @@
+framework,model,valid_n,mean,std,iqr,min,max,ipl_mean,t20i_mean,ipl_minus_t20i_mean,spearman_corr_with_model_c,pearson_corr_with_model_c,top30_agreement_with_c_pct,top30_jaccard_with_c_pct,yearly_mean_spread_2022_2026,summary
+Chase (Inn 2),Model A (Rule-Based Fixed),91149,29.746,24.953,30.222,0.0,99.9,30.255,29.313,0.941,0.981,0.9767,96.86,90.04,2.194,Fixed domain bounds; no format-specific baselines
+Chase (Inn 2),Model B (Empirical Percentile),91149,46.788,23.85,36.438,3.301,99.658,47.549,46.142,1.407,0.961,0.9671,96.67,89.48,2.83,Pooled ECDF rank scaling; uniform-like component ranks
+Chase (Inn 2),Model C (Context-Normalized LOMO - Primary),91149,42.677,20.367,26.495,2.494,97.753,42.04,43.218,-1.178,1.0,1.0,100.0,100.0,2.16,IPL vs T20I LOMO empirical baselines + smooth logistic scaling
+First Innings (Inn 1),Model A (Rule-Based Fixed),101288,21.746,18.423,20.905,0.0,96.667,18.988,23.995,-5.006,0.9362,0.9333,93.77,81.18,3.026,Fixed domain bounds; no format-specific baselines
+First Innings (Inn 1),Model B (Empirical Percentile),101288,46.804,21.367,30.122,6.72,98.918,43.044,49.87,-6.825,0.9207,0.9372,92.85,78.72,4.253,Pooled ECDF rank scaling; uniform-like component ranks
+First Innings (Inn 1),Model C (Context-Normalized LOMO - Primary),101288,37.898,15.932,22.529,3.465,92.729,37.537,38.192,-0.656,1.0,1.0,100.0,100.0,5.262,IPL vs T20I LOMO empirical baselines + smooth logistic scaling
+Bowling (Inn 1+2),Model A (Rule-Based Fixed),192437,52.017,16.216,24.264,8.601,100.0,54.241,50.167,4.073,0.9261,0.922,88.56,67.97,3.223,Fixed domain bounds; no format-specific baselines
+Bowling (Inn 1+2),Model B (Empirical Percentile),192437,46.574,15.439,23.251,5.905,94.237,48.711,44.798,3.913,0.8597,0.8777,83.61,57.09,2.26,Pooled ECDF rank scaling; uniform-like component ranks
+Bowling (Inn 1+2),Model C (Context-Normalized LOMO - Primary),192437,51.464,13.631,18.921,8.072,92.655,54.096,49.276,4.82,1.0,1.0,100.0,100.0,2.011,IPL vs T20I LOMO empirical baselines + smooth logistic scaling
